@@ -16,7 +16,7 @@ export const App = () => {
         <>
             {console.log("TEST")}
             <h1 style = {{ color: "red" }}>こんにちは</h1>
-            <ColoredMessage />
+            <ColoredMessage color = "blue" message = "お元気ですか？"/>
             <p style = {contentPinkStyle}>元気です</p>
             <button onClick={onClickButton}>ボタン</button>
         </>
