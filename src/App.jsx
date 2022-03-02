@@ -6,18 +6,12 @@ export const App = () => {
         alert();
     };
 
-    // ピンクスタイル
-    const contentPinkStyle ={
-        color: "pink",
-        fontSize: "20px"
-    };
-
     return (
         <>
             {console.log("TEST")}
             <h1 style = {{ color: "red" }}>こんにちは</h1>
             <ColoredMessage color = "blue" message = "お元気ですか？"/>
-            <p style = {contentPinkStyle}>元気です</p>
+            <ColoredMessage color = "pink" message = "元気です"></ColoredMessage>
             <button onClick={onClickButton}>ボタン</button>
         </>
     );
