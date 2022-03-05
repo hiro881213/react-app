@@ -5,7 +5,7 @@ import { CssModules } from './components/CssModules';
 import { StyledJsx } from './components/StyledJsx';
 import { StyledComponents } from './components/StyledComponents'
 import { Emotion } from './components/Emotion';
-
+import { Tailwind } from './components/Tailwind';
 
 import './App.scss';
 
@@ -44,6 +44,7 @@ function App() {
         <StyledJsx />
         <StyledComponents />
         <Emotion />
+        <Tailwind />
       </main>
     </div>
     </>

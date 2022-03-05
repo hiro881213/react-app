@@ -21,7 +21,6 @@ export const Emotion = () => {
         color: "#66F"
     });
 
-
     return (
         <div css={containerStyle}>
             <p css = {titleStyle}>Emotionです</p>
