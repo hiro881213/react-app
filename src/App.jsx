@@ -7,10 +7,10 @@ export const App = () => {
     // Stateの定義
     const [num, setNum] = useState(0);
 
-    // numが変化したときの処理
-    useEffect(() => {
-        alert();
-    }, [num])
+    // // numが変化したときの処理
+    // useEffect(() => {
+    //     alert();
+    // }, [num])
 
 
     // ボタンクリック処理
@@ -23,14 +23,20 @@ export const App = () => {
 
     return (
         <>
-
             <h1 style = {{ color: "red" }}>こんにちは</h1>
 
             <ColoredMessage color = "blue">お元気ですか？</ColoredMessage>
             <ColoredMessage color = "pink">元気です</ColoredMessage>
 
-            <button onClick={onClickButton}>ボタン</button>
+            <button onClick={onClickButton}>カウントアップ</button>
             <p>{num}</p>
+
+            <div>
+                <p>CSS Modules</p>
+                <button>ボタン</button>
+            </div>
+
+
         </>
     );
 
