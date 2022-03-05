@@ -1,5 +1,7 @@
 import { ColoredMessage } from './components/ColoredMessage';
-import { useEffect, useState } from 'react';
+import { CssModules } from './components/CssModules';
+
+import { useState } from 'react';
 
 
 export const App = () => {
@@ -31,11 +33,7 @@ export const App = () => {
             <button onClick={onClickButton}>カウントアップ</button>
             <p>{num}</p>
 
-            <div>
-                <p>CSS Modules</p>
-                <button>ボタン</button>
-            </div>
-
+            <CssModules />
 
         </>
     );
