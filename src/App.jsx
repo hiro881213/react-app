@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import { CssModules } from './components/CssModules';
 import { StyledJsx } from './components/StyledJsx';
+import { StyledComponents } from './components/StyledComponents'
 
 import './App.scss';
 
@@ -39,6 +40,8 @@ function App() {
         
         <CssModules />
         <StyledJsx />
+        <StyledComponents />
+
       </main>
     </div>
     </>
