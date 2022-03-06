@@ -1,4 +1,4 @@
-import { useState, memo } from "react";
+import { useState, memo, useCallback } from "react";
 import { Child1 } from "./components/chap6_child/Child1";
 import { Child4 } from "./components/chap6_child/Child4";
 
@@ -15,9 +15,9 @@ export const Page3 = memo(() => {
     }
 
     // リセット処理
-    const onClickReset = () => {
+    const onClickReset = useCallback(() => {
         setNum(0);
-    }
+    }, []);
 
     return (
         <>
