@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, memo } from "react";
 import { Child1 } from "./components/chap6_child/Child1";
 import { Child4 } from "./components/chap6_child/Child4";
 
-export const Page3 = () => {
+export const Page3 = memo(() => {
 
     console.log("Page3レンダリング")
 
@@ -25,4 +25,4 @@ export const Page3 = () => {
         </>
     );
 
-};
+});
