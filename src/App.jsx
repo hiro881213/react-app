@@ -13,15 +13,14 @@ import React from 'react'
 
 import './App.scss';
 
+function App() {
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        HelloPage1!!
-      </div>
-    );
-  }
+  return (
+    <div>
+      <h1>TEST</h1>
+    </div>
+  );
+
 }
 
 // function App() {
