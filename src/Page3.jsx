@@ -1,0 +1,28 @@
+import { useState } from "react";
+import { Child1 } from "./components/chap6_child/Child1";
+import { Child4 } from "./components/chap6_child/Child4";
+
+export const Page3 = () => {
+
+    console.log("Page3レンダリング")
+
+    // State
+    const [num, setNum] = useState(0);
+
+    // ボタンクリック処理
+    const onClickButton = () => {
+        setNum(num + 1);
+    }
+
+    return (
+        <>
+            <button onClick = { onClickButton }>ボタン</button>
+            <p>{num}</p>
+
+            <Child1 />
+            <Child4 />
+            <a href = '../Page2'>戻る</a>
+        </>
+    );
+
+};

@@ -15,8 +15,8 @@ export const Page2 = () => {
             <Tailwind />
             <div>
                 <a href = './'>戻る</a>
+                <a href = '../Page3'>次へ</a>
             </div>
-
         </>
     );
 
