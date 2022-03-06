@@ -27,6 +27,7 @@ export const Page3 = memo(() => {
             <Child1 onClickReset = {onClickReset} />
             <Child4 />
             <a href = '../Page2'>戻る</a>
+            <a href = '../Page4'>次へ</a>
         </>
     );
 
