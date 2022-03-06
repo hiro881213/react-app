@@ -1,13 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Page1 } from './Page1'
-
-
-// import { CssModules } from './components/CssModules';
-// import { StyledJsx } from './components/StyledJsx';
-// import { StyledComponents } from './components/StyledComponents'
-// import { Emotion } from './components/Emotion';
-// import { Tailwind } from './components/Tailwind';
+import { Page2 } from './Page2'
 
 import './App.scss';
 
@@ -17,11 +11,10 @@ function App() {
     <>
       <div className="App">
         <main>
-
           <BrowserRouter>
-            <h1>Hello React Router</h1>
             <Routes>
-              <Route path="/" element={<Page1 />} ></Route>
+              <Route exact path="/" element={<Page1 />} ></Route>
+              <Route path="/page2" element={<Page2 />} ></Route>
             </Routes>
           </BrowserRouter>
         </main>
@@ -30,24 +23,5 @@ function App() {
   );
 
 }
-
-// function App() {
-
-
-
-
-  // return (
-  //   <>
-        
-  //       <CssModules />
-  //       <StyledJsx />
-  //       <StyledComponents />
-  //       <Emotion />
-  //       <Tailwind /> */}
-  //     </main>
-  //   </div>
-  //   </>
-  // );
-// }
 
 export default App;
