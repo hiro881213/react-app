@@ -1,5 +1,5 @@
 import React from 'react'
-// import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import page1 from './page1';
 
 // import { ColoredMessage } from './components/ColoredMessage';
@@ -16,11 +16,20 @@ import './App.scss';
 function App() {
 
   return (
-    <div>
-      <h1>TEST</h1>
-    </div>
+    <>
+    <BrowserRouter>
+      <h1>Hello React Router</h1>
+      <Routes>
+        <Route path="/" element={<Home />} ></Route>
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 
+}
+
+function Home() {
+  return <h2>Home</h2>;
 }
 
 // function App() {
