@@ -12,7 +12,11 @@ export const Page2 = () => {
             <StyledJsx />
             <StyledComponents />
             <Emotion />
-            <Tailwind /> 
+            <Tailwind />
+            <div>
+                <a href = './'>戻る</a>
+            </div>
+
         </>
     );
 

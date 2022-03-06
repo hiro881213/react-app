@@ -26,7 +26,11 @@ export const Page1 = () => {
             <ColoredMessage color = "pink">元気です</ColoredMessage>
 
             <button onClick={onClickButton}>カウントアップ</button>
+
             <p>{num}</p>
+            <div>
+                <a href = './Page2'>次へ</a>
+            </div>
         </>
     
     );
