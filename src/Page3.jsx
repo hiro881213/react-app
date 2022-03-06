@@ -14,12 +14,17 @@ export const Page3 = memo(() => {
         setNum(num + 1);
     }
 
+    // リセット処理
+    const onClickReset = () => {
+        setNum(0);
+    }
+
     return (
         <>
             <button onClick = { onClickButton }>ボタン</button>
             <p>{num}</p>
 
-            <Child1 />
+            <Child1 onClickReset = {onClickReset} />
             <Child4 />
             <a href = '../Page2'>戻る</a>
         </>
